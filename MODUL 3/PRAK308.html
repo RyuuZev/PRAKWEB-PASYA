@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Khusus</title>
+    <style>
+        body { font-family: arial; }
+        
+        .pk { 
+            background-color: skyblue; 
+            color: red; 
+            font-size: 35px; 
+            padding: 10px 0 20px 0; 
+            
+        }
+        
+        .tsa { background-color: rgb(255, 139, 139); padding: 10px; }
+        
+        .dd { 
+            background-color: gray; 
+            font-size: 30px; 
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tkp td { 
+            font-size: 15px; 
+            padding-right: 10px; 
+            font-family: "Times New Roman", Times, serif; 
+            font-weight: normal; 
+        }
+
+        p { font-size: 20px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+  <form>
+
+    <table border="1" align="center" width="550" height="650" style="border-collapse: collapse;">
+        <tr>
+            <td class="pk" align="center" valign="top">Pendaftaran Khusus</td>
+        </tr>
+
+        <tr>
+            <td class="dd" valign="top">
+                <b>Data Diri</b>
+                <table class="tkp" border="0">
+                    <tr>
+                        <td>Nama</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" id="Laki-laki" name="jk"><label for="Laki-laki">Laki-laki</label><br>
+                            <input type="radio" id="Perempuan" name="jk"><label for="Perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Pilih Program Khusus</td>
+                        <td>
+                            <input type="checkbox" id="C#"><label for="C#">C#</label><br>
+                            <input type="checkbox" id="Java"><label for="Java">Java</label><br>
+                            <input type="checkbox" id="SQL"><label for="SQL">SQL</label><br>
+                            <input type="checkbox" id="HTML"><label for="HTML">HTML dan PHP</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilihan Hari/Jam</td>
+                        <td>
+                            <select>
+                                <option>Senin - Rabu / 09.00 - 11.00</option>
+                                <option>Kamis - Rabu / 08.00 - 10.00</option>
+                                <option>Selasa - Rabu / 12.00 - 15.00</option>
+                                <option>Minggu - Rabu / 08.00 - 16.00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td height="150" valign="top" class="tsa">
+                    Komentar Anda <br>
+                    <textarea cols="55" rows="5" style="width: 95%;"></textarea>
+                    <div style="margin-top: 10px;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <input type="button" value="Cancel">
+                    </div>
+            </td>
+        </tr>
+    </table>
+  </form> 
+
+</body>
+</html>
